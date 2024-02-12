@@ -15,8 +15,9 @@ describe("Command class", function() {
   });
 
   it("constructor sets a value passed in as the 2nd argument", ()=>{
-    let statusCommand = new Command("BEEP", "BOOP");
-    expect(statusCommand.value).toBe("BOOP");
+    // let statusCommand = new Command("BEEP", "BOOP");
+    // expect(statusCommand.value).toBe("BOOP");
+    expect(new Command("BEEP", "BOOP").value).toBe("BOOP");
   });
 
 });
