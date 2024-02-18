@@ -6,11 +6,11 @@ class Rover {
       this.generatorWatts = 110;
    }
    receiveMessage(message){
-      // let results = []
-      // for (let i = 0; i < message.commands.length; i++){
-      //    results.push(message.commands[i]);
-      // };
-      let results = message.commands;
+      let results = []
+      for (const objects in message.commands){
+         let resultObject = {};
+         results.push(resultObject);
+      };
       let response = {
          "message": message.name,
          "results": results

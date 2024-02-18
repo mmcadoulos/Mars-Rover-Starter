@@ -29,8 +29,13 @@ describe("Rover class", function() {
         let message = new Message("test", commands);
         let response = testRover.receiveMessage(message);
         expect(response.results.length).toEqual(2);
+    });
 
+    // it("responds correctly to the status check command", ()=>{
+    //     let commands = [new Command('STATUS_CHECK')];
+    //     let testRover = new Rover(25);
+    //     let message = new Message("test", commands);
 
-    })
+    // });
 
 });
