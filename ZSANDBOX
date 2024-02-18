@@ -10,5 +10,8 @@ let command3 = new Command('MODE_CHANGE', mode1);
 let commands = [command1, command3];
 let message1 = new Message("Message 1", commands);
 
-console.log(command2);
-console.log(message1);
+// console.log(command2);
+// console.log(message1);
+for(let i = 0; i <commands.length; i++){
+    console.log("I'm confused");
+}
